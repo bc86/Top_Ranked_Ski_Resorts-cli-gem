@@ -1,0 +1,34 @@
+Top Rated Ski Resorts in North America
+
+Scrape -- zrankings.com
+
+Title on Page -- Best Ski Resorts In North America
+
+Primary Page -- Rank of the Mountain
+Primary Page -- Name of the Mountain
+Primary Page -- Show the state that the mountain is in
+
+Secondary Page -- Give description of mountain 
+Secondary Page -- Info about the mountain things like acres, total runs, longest run, lifts, uphill max, terrain parks, halfpipes
+
+
+          ========================================== Build Gem ======================================
+
+Scrape from https://www.zrankings.com/ for the Primary Page Information
+	Scrape from .....  for the Secondary Page Information
+
+Create a Gemfile in main directory
+
+Primary Page 
+		
+   scraper.rb -- information from https://www.zrankings.com/
+   		set the page to be scraped by resort file
+
+   resort.rb -- use method from scraper.rb to get information about resort
+   		ranking
+   		name of mountain
+   		state the resort is in
+
+   mountains.rb -- @initialize - name of mountain, state mountain resides, ranking
+
+   Create CLI to access everything -- create Bin file, create environment file with all the require files
