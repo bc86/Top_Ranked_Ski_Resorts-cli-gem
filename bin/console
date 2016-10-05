@@ -8,10 +8,11 @@
 # Pry.start
 
 require 'bundler/setup'
-require 'top_ranked_ski_resorts'
+#require 'top_ranked_ski_resorts'
+require './config/environment.rb'
 require 'irb'
 
-require_relative '../config/environment'
+#require_relative '../config/environment.rb'
 
 puts "Welcome to My Sandbox"
 puts "Lets try things out"

@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
-require_relative '../config/environment'
+
+require 'top_ranked_ski_resorts.rb'
 
 TopRankedSkiResorts::CLI.new.call
