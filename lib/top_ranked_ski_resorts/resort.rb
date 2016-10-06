@@ -1,8 +1,15 @@
 class TopRankedSkiResorts::Resort
 
-	attr_accessor :rank, :name, :state
+	attr_accessor :place, :state, :rank
 
 	@@all = []
+
+	#def initialize(place, state, rank)
+		#@place = place
+		#@state = state
+		#@rank = rank
+	#end
+
 	#def self.new_from_index_page(resort)
 	#	self.new(
 	#		resort.css("td:first_child").text,
@@ -13,12 +20,6 @@ class TopRankedSkiResorts::Resort
 	#end
 	#binding.pry
 
-	#def initialize(rank, name, state)
-	#	@rank = rank
-	#	@name = name
-	#	@state = state
-	#	@@all << self
-	#end
 
 	def save
 		@@all << self
@@ -27,5 +28,7 @@ class TopRankedSkiResorts::Resort
 	def self.all
 		@@all
 	end
+
+	puts self.all
 binding.pry
 end

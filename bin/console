@@ -9,11 +9,8 @@
 
 require 'bundler/setup'
 #require 'top_ranked_ski_resorts'
-require './config/environment.rb'
-require 'irb'
-
-#require_relative '../config/environment.rb'
+require_relative '../lib/top_ranked_ski_resorts'
 
 puts "Welcome to My Sandbox"
-puts "Lets try things out"
+require 'irb'
 IRB.start
