@@ -23,5 +23,4 @@ class TopRankedSkiResorts::Scraper
 			resort.save
 		end
 	end
-	binding.pry
 end

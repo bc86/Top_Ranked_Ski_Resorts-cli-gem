@@ -12,4 +12,3 @@ require_relative '../lib/top_ranked_ski_resorts/scraper'
 require_relative '../lib/top_ranked_ski_resorts/cli'
 
 #Load other random stuff
-puts "Loaded environment?"

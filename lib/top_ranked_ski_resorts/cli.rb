@@ -2,13 +2,30 @@ class TopRankedSkiResorts::CLI
 
 	def call
 		puts "Best Ski Resorts in North America"
-		puts "Select Resort"
-		pick_mountain
+		TopRankedSkiResorts::Scraper.new.primary_page
+		list_resorts
+		menu
 	end
 
-	#def pick_mountain
-		#code to select resort for more options
-		
-	#end
+	def list_resorts
+		TopRankedSkiResorts::Resort.all.each_with_index do |resort, i|
+			puts "#{i+1} #{resort.place}"
+		end
+	end
 
+	def menu
+		input = ""
+		while input != "exit"
+			puts "Please select number of resort you would like to learn more about"
+			input = gets.strip
+
+			if input.to_i-1 <= TopRankedSkiResorts::Resort.all.size
+				resort = TopRankedSkiResorts::Resort.all[input.to_i-1]
+				puts
+				#puts resort.rank
+				puts "Name: #{resort.place}"
+				puts "State: #{resort.state}"
+			end
+		end
+	end
 end
