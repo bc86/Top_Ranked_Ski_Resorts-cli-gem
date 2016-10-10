@@ -16,7 +16,7 @@ class TopRankedSkiResorts::CLI
 	def menu
 		input = ""
 		while input != "exit"
-			puts "Please select number of resort you would like to learn more about"
+			puts "Please select number of the resort you would like to learn more about"
 			input = gets.strip
 
 			if input.to_i-1 <= TopRankedSkiResorts::Resort.all.size
@@ -25,6 +25,7 @@ class TopRankedSkiResorts::CLI
 				#puts resort.rank
 				puts "Name: #{resort.place}"
 				puts "State: #{resort.state}"
+				puts "huh #{resort.total_runs}"
 			end
 		end
 	end

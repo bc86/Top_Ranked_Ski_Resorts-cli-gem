@@ -1,6 +1,6 @@
 class TopRankedSkiResorts::Resort
 
-	attr_accessor :place, :state, :rank
+	attr_accessor :place, :state, :rank, :total_runs
 
 	@@all = []
 
