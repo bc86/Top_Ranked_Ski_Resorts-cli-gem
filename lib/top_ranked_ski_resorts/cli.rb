@@ -25,7 +25,12 @@ class TopRankedSkiResorts::CLI
 				#puts resort.rank
 				puts "Name: #{resort.place}"
 				puts "State: #{resort.state}"
-				puts "huh #{resort.total_runs}"
+				puts "Acreage: #{resort.acreage}"
+				puts "Vertical Drop: #{resort.vertical_drop}"
+				puts
+				puts "Total Runs: #{resort.total_runs}"
+				puts "Longest Run: #{resort.longest_run}"
+				puts "Nearest Airport: #{resort.airport}"
 			end
 		end
 	end
