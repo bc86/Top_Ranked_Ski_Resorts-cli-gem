@@ -1,7 +1,20 @@
 class TopRankedSkiResorts::CLI
 
 	def call
-		puts "Best Ski Resorts in North America"
+		puts 
+		puts
+		puts "                                           *"
+		puts "                                          * *"
+		puts "                                 *       *   *"
+		puts "                                * *     *     *"
+		puts "                               *   *   *       *"
+		puts "                              *     * *         *"
+		puts "                           * *       *           * *"
+		puts "                          * *         *           * *"
+		puts "                         *   *         *         *   *"
+		puts "                        *     *         *       *     *"
+		puts
+		puts "********************  Best Ski Resorts in North America  ********************"
 		TopRankedSkiResorts::Scraper.new.primary_page
 		list_resorts
 		menu
@@ -16,21 +29,28 @@ class TopRankedSkiResorts::CLI
 	def menu
 		input = ""
 		while input != "exit"
+			puts
 			puts "Please select number of the resort you would like to learn more about"
-			input = gets.strip
+			puts
+			puts "Resort Selection: #{input = gets.strip}"
 
 			if input.to_i-1 <= TopRankedSkiResorts::Resort.all.size
 				resort = TopRankedSkiResorts::Resort.all[input.to_i-1]
+				#puts
+				puts "Name:  #{resort.place}"
+				puts "State:  #{resort.state}"
+				puts 
+				puts "==================== Details ===================="
 				puts
-				#puts resort.rank
-				puts "Name: #{resort.place}"
-				puts "State: #{resort.state}"
-				puts "Acreage: #{resort.acreage}"
-				puts "Vertical Drop: #{resort.vertical_drop}"
+				puts "Acreage:  #{resort.acreage}"
+				puts "Vertical Drop:  #{resort.vertical_drop}"
+				puts "Total Runs:  #{resort.total_runs}"
+				puts "Longest Run:  #{resort.longest_run}"
+				puts "Nearest Airport:  #{resort.airport}"
 				puts
-				puts "Total Runs: #{resort.total_runs}"
-				puts "Longest Run: #{resort.longest_run}"
-				puts "Nearest Airport: #{resort.airport}"
+				puts "==================== Quick Description ===================="
+				puts
+				puts "#{resort.protip.gsub(/\s+/, " ")}"
 			end
 		end
 	end

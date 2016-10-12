@@ -1,7 +1,7 @@
 class TopRankedSkiResorts::Resort
 
 	attr_accessor :rank, :place, :state, :true_snowfall, :acreage, :vertical_drop, :summit_elevation,
-		:lifts, :score, :save, :total_runs, :longest_run, :terrain_parks, :halfpipes, :airport
+		:lifts, :score, :save, :total_runs, :longest_run, :terrain_parks, :halfpipes, :airport, :protip
 
 	#def initialize#(rank, place, state, true_snowfall, acreage, vertical_drop, summit_elevation, lifts, score, save,
 		#total_runs, longest_run, terrain_parks, halfpipes, airport)
@@ -32,5 +32,4 @@ class TopRankedSkiResorts::Resort
 	def save
 		@@all << self
 	end
-	binding.pry
 end

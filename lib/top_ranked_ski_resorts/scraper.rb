@@ -50,7 +50,7 @@ class TopRankedSkiResorts::Scraper
 			resort.vertical_drop = tbody_tr.search("td.desktop-620").text
 			resort.summit_elevation = tbody_tr.search("td.desktop-850").text
 			resort.lifts = tbody_tr.search("td.desktop-950").text
-			resort.score = tbody_tr.search("td #score").text
+			resort.score = tbody_tr.search("td #score").text.to_i
 
 			#secondary page scrape
 
@@ -59,12 +59,12 @@ class TopRankedSkiResorts::Scraper
    					resort.terrain_parks = second.search("div.side-stats-2 ul li:nth-child(6) span").text
    					resort.halfpipes = second.search("div.side-stats-2 ul li:nth-child(8) span").text
    					resort.airport = second.search("div.side-stats-2 ul li:nth-child(10) span").text
+   					resort.protip = second.search("div.toptiptext > p").text
 
    					resort.save
 				end
 			end
 	end
-	binding.pry
 
 #	#def secondary_page
 #	#	@doc = Nokogiri::HTML(open(BASE_ZRANKINGS_URL))
