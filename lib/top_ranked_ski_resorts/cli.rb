@@ -24,11 +24,6 @@ class TopRankedSkiResorts::CLI
 		puts
 	end
 
-	#def list_resorts
-	#	TopRankedSkiResorts::Resort.all.each_with_index do |resort, i|
-	#		puts "#{i+1} #{resort.place}"
-	#	end
-	#end
 	def list_resorts
 		TopRankedSkiResorts::Resort.all.each_with_index { |resort, i| puts "#{i+1} #{resort.place}" }
 	end
@@ -37,10 +32,14 @@ class TopRankedSkiResorts::CLI
 		input = ""
 		while input != "exit"
 			puts
+			puts
+			puts 
 			puts "Please select number of the resort you would like more information about or type 'exit' to leave"
 			
 			input = gets.strip.downcase
 			if input == "exit"
+				puts 
+				puts
 				puts "**thank you for checking out top_ranked_ski_resorts gem now go hit the slopes**"
 				break
 			end
