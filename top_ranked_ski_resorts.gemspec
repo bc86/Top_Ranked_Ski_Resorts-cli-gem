@@ -10,9 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["michael.4486@gmail.com"]
 
   spec.summary       = %q{List of Top Ranked Ski Resorts of North America}
-  #spec.description   = %q{TODO: Write a longer description or delete this line.}
   #spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-  #spec.license       = "MIT"
+  spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
