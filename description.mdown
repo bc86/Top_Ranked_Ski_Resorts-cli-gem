@@ -32,3 +32,7 @@ Primary Page
    mountains.rb -- @initialize - name of mountain, state mountain resides, ranking
 
    Create CLI to access everything -- create Bin file, create environment file with all the require files
+
+1 - select number of resort to learn more 
+2 - type more to learn more about current resort and link to that page
+3 - 

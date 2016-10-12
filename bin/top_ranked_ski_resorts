@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require './top_ranked_ski_resorts'
+require_relative '../lib/top_ranked_ski_resorts'
 
 TopRankedSkiResorts::CLI.new.call
