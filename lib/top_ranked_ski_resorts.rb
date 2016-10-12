@@ -1,6 +1,5 @@
 require 'nokogiri'
 require 'open-uri'
-require 'pry'
 module TopRankedSkiResorts
 
 	require './lib/top_ranked_ski_resorts/version'
