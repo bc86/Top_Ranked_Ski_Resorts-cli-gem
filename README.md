@@ -1,8 +1,8 @@
 # TopRankedSkiResorts
 
-This is a simple gem that starts with a ranked list of the best ski resorts in North America. Then you have the option to choose a resort from the list that will then give you details about the resort and mountain.
+This is a simple Ruby CLI Gem that scrapes a ranked list of the best ski resorts in North American from zrankings.com. Then you have the option to choose a resort from the list that will then give you details about the resort and mountain. Things like name of resort, vertical drop, snowfall amounts, acreage and pure awesomeness factor score.
 
-## Installation
+## Installation Instructions -
 
 Add this line to your application's Gemfile:
 
@@ -18,13 +18,16 @@ Or install it yourself as:
 
     $ gem install top_ranked_ski_resorts
 
-## Usage
+## Usage - 
 
 Type the below and then follow the onscreen prompts
 	
 	$ top_ranked_ski_resorts
 
-## Development
+## Importan Gems for App - 
+* `nokogiri` - used to parse ranking HTML page
+
+## Development - 
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
