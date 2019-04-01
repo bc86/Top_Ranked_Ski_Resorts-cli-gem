@@ -12,17 +12,17 @@ gem 'top_ranked_ski_resorts'
 
 And then execute:
 
-    $ bundle
+`$ bundle`
 
 Or install it yourself as:
 
-    $ gem install top_ranked_ski_resorts
+`$ gem install top_ranked_ski_resorts`
 
 ## Usage - 
 
 Type the below and then follow the onscreen prompts
 	
-	$ top_ranked_ski_resorts
+`$ top_ranked_ski_resorts`
 
 ## Importan Gems for App - 
 * `nokogiri` - used to parse ranking HTML page
